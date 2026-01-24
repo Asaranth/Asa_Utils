@@ -1,0 +1,12 @@
+## Interface: 120000
+## Title: |cFF047857Asa|r Suite: AU
+## Category-enUS: |cFF047857Asa|r Suite
+## Group: Asa_Suite
+## Notes: Collection of QoL Utilities.
+## Author: Asaranth
+## Version: 1.0.0
+## SavedVariables: AU_DB
+
+embeds.xml
+Core.lua
+Settings.lua
