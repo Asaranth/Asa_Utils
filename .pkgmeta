@@ -1,4 +1,4 @@
-package-as: Aas_Utils
+package-as: Asa_Utils
 
 ignore:
     - README.md
