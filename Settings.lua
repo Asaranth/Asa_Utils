@@ -1,6 +1,6 @@
 local _, AU = ...
 
-StaticPopupDialogs['Asa_CONFIRM_CLEAR_ALL_QUESTS'] = {
+StaticPopupDialogs['ASA_CONFIRM_CLEAR_ALL_QUESTS'] = {
     text = "Do you want to clear all quests?\nType 'CONFIRM' into the field to confirm.",
     button1 = 'Yes',
     button2 = 'No',
@@ -18,7 +18,7 @@ StaticPopupDialogs['Asa_CONFIRM_CLEAR_ALL_QUESTS'] = {
     hasEditBox = true, timeout = 0, whileDead = true, hideOnEscape = true, preferredIndex = 3
 }
 
-StaticPopupDialogs['Asa_CONFIRM_CLEAR_ALL_BARS'] = {
+StaticPopupDialogs['ASA_CONFIRM_CLEAR_ALL_BARS'] = {
     text = "Do you want to clear all action bars?\nType 'CONFIRM' into the field to confirm.",
     button1 = 'Yes',
     button2 = 'No',
@@ -34,7 +34,7 @@ StaticPopupDialogs['Asa_CONFIRM_CLEAR_ALL_BARS'] = {
 
 function AU:GetSettings()
     local options = {
-        name = 'AU',
+        name = 'Utils',
         type = 'group',
         args = {
             general = {
@@ -66,14 +66,14 @@ function AU:GetSettings()
                         type = 'execute',
                         name = 'Clear All Quests',
                         desc = 'Abandons all quests in your quest log.',
-                        func = function() StaticPopup_Show('Asa_CONFIRM_CLEAR_ALL_QUESTS') end,
+                        func = function() StaticPopup_Show('ASA_CONFIRM_CLEAR_ALL_QUESTS') end,
                         order = 1,
                     },
                     ClearBars = {
                         type = 'execute',
                         name = 'Clear Action Bars',
                         desc = 'Removes all spells and items from your action bars.',
-                        func = function() StaticPopup_Show('Asa_CONFIRM_CLEAR_ALL_BARS') end,
+                        func = function() StaticPopup_Show('ASA_CONFIRM_CLEAR_ALL_BARS') end,
                         order = 2,
                     },
                 },

@@ -28,7 +28,7 @@ function AU:OnInitialize()
 
     -- Register module's options as a sub-category
     LibStub("AceConfig-3.0"):RegisterOptionsTable("AU", options)
-    self.optionsFrame, self.categoryID = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("AU", "Utilities", "|cFF047857Asa|r Suite")
+    self.optionsFrame, self.categoryID = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("AU", "Utils", "|cFF047857Asa|r Suite")
 
     -- Ensure we have the parent category ID if possible
     if not self.categoryID and self.optionsFrame and self.optionsFrame.parent then
@@ -39,8 +39,8 @@ function AU:OnInitialize()
     _G['MAX_EQUIPMENT_SETS_PER_PLAYER'] = 100
 
     self:RegisterChatCommand('au', 'HandleSlashCommands')
-    self:RegisterChatCommand('clearquests', function() StaticPopup_Show('Asa_CONFIRM_CLEAR_ALL_QUESTS') end)
-    self:RegisterChatCommand('clearbars', function() StaticPopup_Show('Asa_CONFIRM_CLEAR_ALL_BARS') end)
+    self:RegisterChatCommand('clearquests', function() StaticPopup_Show('ASA_CONFIRM_CLEAR_ALL_QUESTS') end)
+    self:RegisterChatCommand('clearbars', function() StaticPopup_Show('ASA_CONFIRM_CLEAR_ALL_BARS') end)
 end
 
 function AU:HandleSlashCommands(input)
