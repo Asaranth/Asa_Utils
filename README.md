@@ -1,5 +1,7 @@
 # Asa Suite: Utils
 
+![CurseForge Downloads](https://img.shields.io/curseforge/dt/1443021) ![CurseForge Game Versions](https://img.shields.io/curseforge/game-versions/1443021)
+
 **Asa Suite: Utils** is a collection of Quality of Life (QoL) utilities for World of Warcraft. It is designed to streamline your gameplay experience by automating tedious tasks and providing quick clean-up tools.
 
 ## Features
