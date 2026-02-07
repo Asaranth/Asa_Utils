@@ -11,3 +11,7 @@
 embeds.xml
 Core.lua
 Settings.lua
+AutoAddSpells.lua
+Cleanup.lua
+EquipmentSets.lua
+GreatVaultAlert.lua

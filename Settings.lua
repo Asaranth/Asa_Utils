@@ -49,10 +49,19 @@ function AU:GetSettings()
                         desc = 'Prevent spells from being added to the actionbars automatically.',
                         set = function(_, val)
                             self.db.global.DisableAutoAddSpells = val
-                            SetCVar('AutoPushSpellToActionBar', val and '0' or '1')
+                            local m = self:GetModule("AutoAddSpells", true)
+                            if m then m:UpdateCVar() end
                         end,
                         get = function() return self.db.global.DisableAutoAddSpells end,
                         order = 1,
+                    },
+                    EnableGreatVaultAlert = {
+                        type = 'toggle',
+                        name = 'Enable Great Vault Alert',
+                        desc = 'Alerts you if you have unclaimed rewards in the Great Vault.',
+                        set = function(_, val) self.db.global.EnableGreatVaultAlert = val end,
+                        get = function() return self.db.global.EnableGreatVaultAlert end,
+                        order = 2,
                     },
                 },
             },

@@ -5,6 +5,7 @@ function AU:OnInitialize()
     self.db = LibStub('AceDB-3.0'):New('AU_DB', {
         global = {
             DisableAutoAddSpells = true,
+            EnableGreatVaultAlert = true,
         },
     }, true)
 
@@ -35,12 +36,7 @@ function AU:OnInitialize()
         self.categoryID = self.optionsFrame.parent
     end
 
-    SetCVar('AutoPushSpellToActionBar', self.db.global.DisableAutoAddSpells and '0' or '1')
-    _G['MAX_EQUIPMENT_SETS_PER_PLAYER'] = 100
-
     self:RegisterChatCommand('au', 'HandleSlashCommands')
-    self:RegisterChatCommand('clearquests', function() StaticPopup_Show('ASA_CONFIRM_CLEAR_ALL_QUESTS') end)
-    self:RegisterChatCommand('clearbars', function() StaticPopup_Show('ASA_CONFIRM_CLEAR_ALL_BARS') end)
 end
 
 function AU:HandleSlashCommands(input)

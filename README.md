@@ -8,6 +8,7 @@
 - **Clear Action Bars**: Quickly wipe all spells and items from your action bars.
 - **Clear Quest Log**: Abandon all quests in your quest log with a single command.
 - **Expanded Equipment Sets**: Increases the maximum number of equipment sets per player to 100.
+- **Great Vault Alert**: Notifies you if you have unclaimed rewards waiting in the Great Vault.
 
 ## Commands
 
